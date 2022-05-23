@@ -9,7 +9,7 @@ class CreateInquirylistTable extends Migration
     public function up()
     {
         Schema::table('inquirylist', function(Blueprint $table) {
-            $sql = 'ALTER TABLE inquirylist ADD first_code INT ZEROFILL';
+            $sql = 'ALTER TABLE inquirylist ADD last_code INT ZEROFILL';
             DB::statement($sql);
         });
         Schema::create('inquirylist', function (Blueprint $table) {
